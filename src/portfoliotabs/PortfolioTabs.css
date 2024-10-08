@@ -1,0 +1,117 @@
+*{
+  font-family: roboto, sans-serif;
+  /* background-color: #16187F; */
+
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 23%;
+    margin: 0px 11px ;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  br{
+    background-color: #16187F;
+  }
+.header2{
+    background-color: #16187F;
+  }
+  
+  .header2 h1{
+    display: flex;
+    justify-content: center;
+    color: #b4f3ef;
+  }
+
+  .header2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 204px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+ .tab-list{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    width: fit-content;
+    /* margin-top: 40px; */
+    background-color: #16187F;
+
+ }
+
+ .tab-list .tab{
+  margin-right: 10px;
+    padding: 20px 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #F0B418;
+    border: 0.5px solid #b4f3ef;
+ }
+/* .tab-list .tab:active{
+  background-color: #F0B418;
+} */
+
+ .tab-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #16187F;
+  }
+  
+  .tab-content {
+    padding: 30px 40px;
+    cursor: pointer;
+    color: #b4f3ef; /* Default color for unselected tabs */
+  }
+  
+  .selected {
+    background-color: #F0B418; /* Background color for selected tab */
+    color: white; /* Text color for selected tab */
+  }
+  

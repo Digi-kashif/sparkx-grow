@@ -1,0 +1,106 @@
+.flowHead {
+  text-align: center;
+  font-size: 50px;
+ 
+  background-color: #16187F;
+  color: #b4f3ef;
+  padding-top: 40px;
+}
+.flow {
+  background-color: #16187F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 8%;
+}
+.flow h6 {
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.flow1 {
+  display: flex;
+}
+.flow1-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow1-detail > h6 {
+  text-align: center;
+}
+.flow1-detail > img {
+  width: 130px;
+  height: 130px;
+  border: 8px solid #1ebee1;
+  border-radius: 50%;
+  margin: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* animation: icon 5s linear infinite; */
+  /* -webkit-animation: icon 5s linear infinite; */
+}
+
+@keyframes icon {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+  
+}
+
+
+.flow1 > img {
+  width: 120px;
+  height: 80px;
+}
+
+.F {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.arr1 {
+  margin: -50px;
+}
+
+.arr2 {
+  margin: -50px;
+}
+
+@media (max-width: 480px) {
+  .flow {
+     padding: 12% 20px;
+  }
+  .flow1-detail > img {
+
+ width: 60px;
+  height: 60px;
+  }
+  .flow1 > img {
+  width: 100px;
+  height: 70px;
+}
+.flow h6 {
+ font-size: 12px;
+}
+.flowHead {
+    font-size: 35px;
+}
+}

@@ -1,0 +1,172 @@
+ 
+/* Blog Container */
+.blogContainer {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    height:  90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHeader h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.containerHeader p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.containerHeader button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerHeader button:hover {
+    background-color: #0056b3;
+}
+
+/* List Section */
+.listDiv{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+.categoryList {
+  display: flex;
+ 
+}
+
+.categoryList  > div{
+ font-size: 18px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+/* Media Queries */
+@media(max-width: 768px) {
+    .inputBtnDiv input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    .blogContainer {
+        height: auto;
+    }
+}
+
+.card img{
+    width: 100%;
+}
+
+
+/* General Styles */
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust max-width as needed */
+    padding: 20px;
+  }
+  
+  .cardsDiv {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+  }
+  
+  .card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with space */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the border-radius applies */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .cardReadBtn {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  /* Pagination Styles */
+  .numbersDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pageText {
+    margin: 0 10px;
+  }
+  
+  /* Latest Blog Styles */
+  .latestBlog {
+    flex: 0 0 300px; /* Fixed width for the sidebar */
+    margin-left: 20px; /* Space between cards and blog section */
+  }
+  
+  .divHeader {
+    margin-bottom: 15px;
+  }
+  
+  .paraDiv {
+    margin-bottom: 15px;
+  }
+  
+  .readButton2 {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+  
+    .latestBlog {
+      flex: 1; /* Allow sidebar to be flexible */
+      margin-left: 0; /* Remove margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%; /* 1 card per row */
+    }
+  }
+
+  

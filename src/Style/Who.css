@@ -1,0 +1,135 @@
+/* Who */
+.Whotag {
+    padding: 20px 20%;
+    text-align: center;
+    background-color: #16187F;
+    color: white;
+}
+
+.Whotag > span {
+    color: #B7F6FA;
+}
+
+.Who {
+    display: flex;
+    padding: 50px 8%;
+    background-color: #16187F;
+}
+
+.WhoDetail {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.WhoDetail p {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+.WhoDetail p > span{
+    color: #B7F6FA;
+}
+
+.WhoImg {
+    width: 50%;
+}
+
+.WhoImg  > img {
+    width: 60%;
+    height: 200px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 00px 0 0 20%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.secondWho {
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #16187F;
+}
+
+.secondDetail {
+    width: 50%;
+    padding-left: 80px;
+}
+
+.secondDetail p {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+.secondDetail p > span{
+    color: #B7F6FA;
+}
+
+.secondImg {
+    width: 50%;
+}
+
+.secondImg img {
+    width: 70%;
+    height: 200px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 15px 15px 15px 15px;
+    margin: 00px 0 0 0;
+}
+
+@media screen and (max-width: 420px) {
+    .Whotag {
+    padding: 20px 7%;
+    font-size: 28px;
+    text-align: center;
+    background-color: #043876;
+    color: white;
+}
+    .Who {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .WhoDetail {
+        width: 100%;
+    }
+
+    .WhoDetail p {
+        text-align: center;
+    }
+
+    .WhoImg {
+        width: 100%;
+    }
+
+    .WhoImg img {
+        margin: 20px 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .secondWho {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .secondDetail {
+        width: 100%;
+        padding-left: 0;
+        order: 1;
+    }
+
+    .secondDetail p {
+        text-align: center;
+    }
+
+    .secondImg {
+        width: 100%;
+        order: 2;
+    }
+
+    .secondImg img {
+        margin: 20px 0;
+        width: 100%;
+        height: 250px;
+    }
+}

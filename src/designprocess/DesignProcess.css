@@ -1,0 +1,198 @@
+.headerDiv {
+    text-align: center;
+    background-color: #16187F;
+    border-bottom: 1px solid rgb(203, 216, 221);
+  }
+  
+  .headerDiv h1 {
+    font-size: 2rem;
+    color: #b4f3ef;
+    padding-top: 37px;
+    font-family: 'Roboto';
+  }
+  
+  .headerDiv p {
+    margin: 0.5rem 0;
+    font-family: 'Roboto';
+    color: #fff;
+    
+  }
+  
+  .headerDiv h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: 'Roboto';
+  }
+  
+  .react-tabs__tab-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 !important;
+    border-bottom: none !important;
+  }
+  
+  .react-tabs__tab {
+    flex: 1;
+    list-style: none !important;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5rem 0; 
+    border: none !important;
+    background: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+    position: inherit !important; 
+  }
+
+  .react-tabs {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #16187F;
+}
+  
+  .react-tabs__tab--selected {
+    color: #007bff;
+    font-weight: bold;
+    border: none !important;
+    background: none !important;
+    border-bottom: none !important;
+  }
+  
+  .react-tabs__tab:focus,
+  .react-tabs__tab:active,
+  .react-tabs__tab--selected:focus,
+  .react-tabs__tab--selected:active {
+    border: none !important;
+    background: none !important;
+    background-color: red;
+  }
+  
+  .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem; 
+    color: #6c757d;
+    border: 2px solid #6c757d; 
+    border-radius: 50%;
+    width: 65px; 
+    height: 65px; 
+    margin: 0 auto; 
+    position: relative;
+    top: 35px;
+  
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+  .tab-content i{
+    color: #fff;
+
+  }
+  .tabContent{
+    margin-top: 50px;
+  }
+  
+  .container .leftDiv{
+    width: 42%;
+    float: left;
+    margin-top: 50px;
+  
+  }
+  
+  .container .leftDiv h1{
+    padding: 0px 0px 0px 120px;
+    color: #007bff;
+    font-family: 'Roboto';
+  }
+  
+  .container .leftDiv p{
+    padding: 25px 0px 0px 120px;
+    text-align: justify;
+    font-family: 'Roboto';
+    text-justify: inter-word;
+    color: #fff;
+    line-height: 25px;
+  }
+  
+  .container .leftDiv span{
+    padding: 0px 0px 0px 120px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Roboto';
+  }
+  
+  .container .leftDiv ul{
+    padding: 0px 0px 0px 140px;
+    margin-top: 30px;
+    
+  }
+
+  .container .leftDiv ul li{
+    color: #fff;
+    padding: 7px 0px;
+    font-family: 'Roboto';
+  }
+  
+  .container .rightDiv{
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+    
+  
+  }
+  
+  .container .rightDiv img{
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftDiv {
+    opacity: 0;
+    transform: translateX(100%); 
+    animation: slideIn 1s forwards; 
+  }
+  
+  .rightDiv img {
+    opacity: 0;
+    transform: translateY(100%); 
+    animation: slideUp 1s forwards; 
+    animation-delay: 0.5s; 
+  }
+  
+  @keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+  }
+  
+  
+  
+  .icon-container.active {
+    background-color:#F0B418;
+    color: #000;
+  }
+
+  .icon-container{
+    color: #000;
+  }
+  
+  
+  
+  

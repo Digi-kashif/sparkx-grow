@@ -1,0 +1,93 @@
+.inputBtn input{
+    padding: 6px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border: 0;
+}
+
+.inputBtn{
+    margin-top: 20px;
+}
+.inputBtn button{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 15px;
+    background-color: #F0B418 !important;
+    cursor: pointer;
+    margin-left: 5px;
+
+
+}
+
+.mapDiv{
+    margin-top: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+/* header p{
+  margin-left: -650px;
+  color: black;
+  font-family: roboto, sans-serif;
+} */
+
+  .menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    width: 70px;
+    position: absolute;
+    right: -60px;
+    top: 10px;
+  }
+ 
+  header .menu-icon:hover{
+    background-color: #F0B418;
+    color: #fff;
+  
+  }
+  .contactBtn{
+    margin-right: 10px !important;
+  }
+  
+  .headerLink {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px; /* Set the width of your menu */
+    transform: translateY(-20px); /* Slide in effect */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animation */
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+  
+  .headerLink.open {
+    transform: translateY(0); /* Slide to original position */
+    opacity: 1; /* Make it visible */
+    pointer-events: auto; /* Enable interaction */
+  }
+  
+  .HL {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .HL:hover {
+    background: #f0f0f0; /* Change background on hover */
+  }
+  

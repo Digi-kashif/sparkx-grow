@@ -1,0 +1,190 @@
+/* General Styles */
+*{
+    font-family: sans-serif;
+}
+.aboutPage > p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.digitalB {
+    color: #b4f3ef;
+    text-align: center;
+    background-color: #16187F;
+    font-size: 45px;
+    padding-top: 70px;
+}
+
+.digitalCon {
+    background-color: #16187F;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.conStyle {
+    background-color: #4F749F;
+    color: white;
+    width: 450px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.conStyle > img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.conStyle > h1 {
+    font-size: 20px;
+}
+
+.conStyle > p {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.market {
+    color: #b4f3ef;
+    text-align: center;
+    font-size: 50px;
+    background-color: #16187F;
+    padding-top: 70px;
+}
+
+.marketpara {
+    text-align: center;
+    background-color: #16187F;
+    color: white;
+}
+
+.marketing {
+    background-color: #16187F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.marketing > p {
+    width: 400px;
+    margin-right: 50px;
+    color: white;
+}
+
+.marketing > img {
+    width: 300px;
+    border: 1 px solid blue;
+    border-radius: 20px;
+}
+
+.arrowD {
+    display: flex;
+    justify-content: center;
+    background-color: #16187F;
+}
+
+.arr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arr > img {
+    width: 250px;
+    height: 200px;
+}
+
+.arrDetail {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrDetail > img {
+    width: 60px;
+}
+
+.arrDetail > h6 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+.arrDetail > p {
+    color: white;
+    font-size: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .digitalB {
+        font-size: 36px;
+        padding-top: 40px;
+    }
+
+    .digitalCon {
+        padding: 10px 5%;
+    }
+
+    .conStyle {
+        width: 100%;
+        max-width: 300px;
+    }
+.marketpara {
+    padding: 0 10px;
+}
+    .market {
+        font-size: 36px;
+        padding-top: 40px;
+    }
+
+    .marketing {
+        flex-direction: column;
+        padding: 10px ;
+        text-align: center;
+
+    }
+
+    .marketing > p {
+        width: 100%;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .marketing > img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .arrowD {
+    flex-direction: column;
+        
+    }
+
+    .arr > img {
+        width: 200px;
+        height: auto;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+    
+    .arrDetail {
+        position:  absolute;
+        margin-top: 10px;
+    }
+    .arrDetail > img{
+        margin-top: -40px;
+    }
+}

@@ -1,0 +1,184 @@
+.slider {
+  position: relative;
+  width: 100%;
+  
+  overflow: hidden;
+  background-color: #16187F;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+}
+
+.slide > h1 {
+  color: #b4f3ef;
+  font-size: 50px;
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
+.slide > h2 {
+  color: #b4f3ef;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: left; /* Align the text to the start (left) */
+  width: 100%; /* Ensure the <h2> takes the full width of its container */
+  padding-left: 30px; /* Add padding to the left if needed */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.image-container {
+  padding: 20px;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.imgBack {
+  background-color: #b4f3ef;
+  margin: -20px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 50px 50px 0px;
+  align-items: center;
+}
+
+.imgBack > h2 {
+  color: black;
+  margin-left: 4px;
+}
+
+.imgBack img {
+  width: 70px;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  background-color: #fa8232;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fa8232;
+  color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 150px;
+}
+
+.next {
+  right: 150px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fa8232;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .image-container {
+    width: 50%;
+  }
+
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    right: 100px;
+  }
+
+  .imgBack {
+    margin: -10px 20px 10px 20px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 65%;
+  }
+.slide{
+  width: 1000px;
+  margin-left: -300px;
+}
+  .slide > h1 {
+  font-size: 30px;
+}
+
+  .image-container > p {
+    font-size: 14px;
+  }
+
+  .next {
+    width: 30px;
+    height: 30px;
+    left: 330px;
+    right: 100px;
+  }
+  .prev {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+  }
+
+  .next {
+    right: 150px;
+  }
+
+  .imgBack {
+    margin: -20px 10px 10px 10px;
+  }
+
+  .imgBack img {
+    width: 50px;
+  }
+
+  .imgBack h2 {
+    font-size: 14px;
+  }
+
+  .indicator {
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+  }
+}
